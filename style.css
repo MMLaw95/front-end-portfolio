@@ -46,26 +46,12 @@ p {
   border-radius: 0.25rem !important;
 }
 
-@media (max-width: 576px) {
-  h1 {
-    font-size: 48px;
-    line-height: 1.5;
-  }
-}
-
 .about-paragraphs {
   margin: 30px 0;
 }
 
 .about-paragraphs p {
   margin: 10px;
-}
-
-@media (max-width: 576px) {
-  h2 {
-    font-size: 32px;
-    text-align: center;
-  }
 }
 
 .email-link {
@@ -94,6 +80,10 @@ p {
   color: white;
 }
 
+.primary-link:hover {
+  color: white;
+}
+
 .secondary-link {
   border-radius: 4px;
   padding: 20px 15px;
@@ -101,4 +91,32 @@ p {
   text-transform: capitalize;
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
+}
+
+/* .homepage-link {
+  color: var(--primary-color);
+  text-align: center;
+  display: block;
+} */
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 48px;
+    line-height: 1.5;
+  }
+
+  h2 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  .project-link {
+    display: block;
+    text-align: center;
+    margin: 0 20px;
+  }
 }
